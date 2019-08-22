@@ -1,0 +1,8 @@
+#Enable vi mode indication
+set show-mode-in-prompt on
+
+#Set the vi mode indication to lean cursor (blinking) when insert mode
+set vi-ins-mode-string \1\e[5 q\2
+
+#Set the vi mode indication to block cursor (blinking) when in command mode
+set vi-cmd-mode-string \1\e[1 q\2
